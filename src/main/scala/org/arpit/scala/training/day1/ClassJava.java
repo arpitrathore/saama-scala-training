@@ -1,4 +1,4 @@
-package org.arpit.scala.training.comparison.day1;
+package org.arpit.scala.training.day1;
 
 public class ClassJava {
 	
