@@ -1,4 +1,4 @@
-package org.arpit.scala.training.day3
+package org.arpit.scala.training.day4
 
 object WithoutTypeTest {
 
