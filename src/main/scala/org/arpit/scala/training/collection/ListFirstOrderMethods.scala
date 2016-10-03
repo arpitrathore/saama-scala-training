@@ -15,7 +15,7 @@ object ListFirstOrderMethods {
   fruits.last
   fruits.init
   
-  //Reverse
+  //Reverse the list
   fruits.reverse
   
   //Apply. Not efficient
