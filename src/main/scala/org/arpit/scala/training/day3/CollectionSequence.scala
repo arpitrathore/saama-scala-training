@@ -1,4 +1,4 @@
-package org.arpit.scala.training.collection
+package org.arpit.scala.training.day3
 
 object CollectionSequence {
   
