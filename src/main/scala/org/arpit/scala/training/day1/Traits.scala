@@ -13,13 +13,16 @@ class APoint(xc: Int, yc: Int) extends Similarity {
       obj.asInstanceOf[Point].x == x
 }
 
-object Traits extends App {
-  val p1 = new APoint(2, 3)
-  val p2 = new APoint(2, 4)
-  val p3 = new APoint(3, 3)
-  
-  println(p1.isSimilar(p2))
-  println(p1.isNotSimilar(p3))
-  println(p1.isNotSimilar(2))
+object Traits {
+
+  def main(args: Array[String]): Unit = {
+    val p1 = new APoint(2, 3)
+    val p2 = new APoint(2, 4)
+    val p3 = new APoint(3, 3)
+
+    println(p1.isSimilar(p2))
+    println(p1.isNotSimilar(p3))
+    println(p1.isNotSimilar(2))
+  }
 
 }
