@@ -1,6 +1,6 @@
 package org.arpit.scala.training.day1
 
-object AnimalExample {
+/*object AnimalExample {
   def main(args: Array[String]): Unit = {
     val animals = List(new Dog, new Cat, new Bear)
     animals.foreach(_.makeSound())
@@ -34,5 +34,5 @@ class Bear extends Animal {
   override def makeSound() = {
     println("Growl!!")
   }
-}
+}*/
 

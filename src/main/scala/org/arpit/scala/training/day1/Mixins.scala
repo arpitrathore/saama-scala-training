@@ -1,48 +1,36 @@
 package org.arpit.scala.training.day1
 
-abstract class AbsInfo {
-  def isSpecialTrain: Boolean
+trait Friend {
+  val name: String
+  def listen = println("I am " + name + " your friend")
 }
 
-trait MyTrain {
-  def printTrainInfo = {
-    println("Train Number : 12130")
-    println("Train Name : Azad hind express")
-  }
-}
+class Human(val name : String) extends Friend
+class Animal(val name : String)
+class Dog(override val name : String) extends Animal(name) with Friend
+class Cat(override val name : String) extends Animal(name) 
 
-class GeneralQuota {
-  def printQuotaDetail = println("General Quota")
-}
-
-class TatkalQuota extends AbsInfo {
-  def printQuotaDetail = println("Tatkal Quota")
-  def isSpecialTrain: Boolean = false
-}
-
-//The LadiesQuota class is constructed from a mixin composition of the parents AbsInfo 
-//and MyTrain with the keyword with. The first parent is called the 
-//abstract class of LadiesQuotaclass, whereas the second 
-//(and every other, if present) parent is called a mixin.
-class LadiesQuota extends AbsInfo with MyTrain {
-  def printQuotaDetail = println("Ladies Quota")
-  def isSpecialTrain: Boolean = false
-}
 
 object Mixins {
-
+  
+  def seekHelp(friend : Friend) = friend.listen
+  
   def main(args: Array[String]): Unit = {
-    val gQuota = new GeneralQuota
-    gQuota.printQuotaDetail
-
-    val tQuota = new TatkalQuota
-    tQuota.printQuotaDetail
-    println("Is it Special train : " + tQuota.isSpecialTrain)
-
-    val lQuota = new LadiesQuota
-    lQuota.printQuotaDetail
-    println("Is it Special train : " + lQuota.isSpecialTrain)
-
-    lQuota.printTrainInfo
+    
+    val rahul = new Human("Rahul")
+    rahul.listen
+    seekHelp(rahul)
+    
+    val rocky = new Dog("Rocky")
+    rocky.listen
+    seekHelp(rocky)
+    
+    val fluffy = new Cat("Fluffy")
+    //fluffy.listen
+    //seekHelp(fluffy)
+    
+    val snowy = new Cat("Snowy") with Friend
+    snowy.listen
+    seekHelp(snowy)
   }
 }
