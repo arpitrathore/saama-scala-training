@@ -1,6 +1,6 @@
 package org.arpit.scala.training.day2
 
-object ApplyAndUpdate {
+object Extractor1 {
 
   def main(args: Array[String]): Unit = {
     //Use of apply
@@ -11,11 +11,6 @@ object ApplyAndUpdate {
     var Fraction(a, b) = Fraction(3, 4) * Fraction(2, 5)
     println(a)
     println(b)
-
-    //Extractor for tuples
-    val (id, name) = (1, "Arpit")
-    println(id)
-    println(name)
   }
 }
 
@@ -33,5 +28,4 @@ object Fraction {
   def unapply(input: Fraction) = {
     if (input.den == 0) None else Some((input.num, input.den))
   }
-
 }
