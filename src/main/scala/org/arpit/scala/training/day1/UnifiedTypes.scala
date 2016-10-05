@@ -13,7 +13,13 @@ object UnifiedTypes {
 
     val iter: Iterator[Any] = set.iterator
     while (iter.hasNext) {
-      println(iter.next.toString())
+      val any = iter.next
+      println(any.toString())
+      
+      if(any.isInstanceOf[Function2[Int, Int, Int]]){
+        val f = any.asInstanceOf[Function2[Int, Int, Int]]
+        println(f(45, 89))
+      }
     }
   }
 
