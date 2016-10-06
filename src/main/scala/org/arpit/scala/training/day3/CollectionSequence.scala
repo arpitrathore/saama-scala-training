@@ -25,7 +25,7 @@ object CollectionSequence {
   buf += 3
 
   //Prepend
-  3 +=: buf
+  3 +=: buf //Syntactic sugar for buf.+=:(3)
 
   //Convert to list
   buf.toList
