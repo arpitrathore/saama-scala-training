@@ -30,13 +30,4 @@ object CollectionSequence {
   //Convert to list
   buf.toList
 
-  //********************Array Buffers********************
-  import scala.collection.mutable.ArrayBuffer
-  val arrBuff = new ArrayBuffer[Int]
-
-  arrBuff += 12
-  arrBuff += 15
-  arrBuff += 21
-
-  buf.length
 }
