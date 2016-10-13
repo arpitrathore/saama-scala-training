@@ -12,5 +12,5 @@ To import this project in Scala IDE (eclipse) as a scala project, follow the fol
 7. Expand the src directory tree (src > main > scala).
 8. Right click on scala and select Build path > Use as source folder.
 9. The scala src/main/scala folder should now appear as source folder.
-10. To test, open FunctionalStyle.scala (To open expand the package org.arpit.scala.training.day1 or click Cntl + shift + r and type FunctionalStyle).
+10. To test, open FunctionalStyle.scala (To open the file, expand the package org.arpit.scala.training.day1 or click Cntl + shift + r and type FunctionalStyle).
 11. Right click on the file and select Run as > Scala application.
