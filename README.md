@@ -1,4 +1,4 @@
-# saama-scala-training
+# Scala training examples
 
 This contains some scala examples as a part of scala training.
 To import this project in Scala IDE (eclipse) as a scala project, follow the following steps-
