@@ -1,7 +1,7 @@
 # Scala training examples
 
 This contains some scala examples as a part of scala training.
-To import this project in Scala IDE (eclipse) as a scala project, follow the following steps-
+To import this project in  <a href="http://scala-ide.org/">Scala IDE</a> (eclipse) as a scala project, follow the following steps-
 
 1. Download this project as zip file.
 2. Extract the zip file.
