@@ -14,3 +14,5 @@ To import this project in  <a href="http://scala-ide.org/">Scala IDE</a> (eclips
 9. The scala src/main/scala folder should now appear as source folder.
 10. To test, open FunctionalStyle.scala (To open the file, expand the package org.arpit.scala.training.day1 or click Cntl + shift + r and type FunctionalStyle).
 11. Right click on the file and select Run as > Scala application.
+
+Video tutorial for importing the project is <a href="https://www.youtube.com/watch?v=OaaAQDadoLg">here</a>
